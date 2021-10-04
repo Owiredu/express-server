@@ -1,0 +1,13 @@
+Go to mongoosejs.com
+
+Install MongoDB locally.
+
+Install Mongoose which allows you to interact with MongoDB. Available on npmjs.com
+
+Learn how to connect to a mongo database using mongoose.
+
+Learn how to create and insert data into a mongo db.
+
+Learn how to read data data from a mongo db.
+
+Need to understand the mongoose schema and model.
