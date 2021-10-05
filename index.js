@@ -1,5 +1,5 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 const products = [
     {
@@ -20,7 +20,7 @@ const products = [
         stars: 5,
         review: "The best bread I have ever had"
     }
-]
+];
 
 const customers = [
     {
@@ -38,28 +38,28 @@ const customers = [
         name: "Gabriel Koranteng",
         gender: "Non-binary"
     }
-]
+];
 
 app.get('/', (req, res) => {
     res.json({
         message: "Page loaded successfully"
-    })
-})
+    });
+});
 
 app.get('/products', (req, res) => {
-    res.json(products)
-})
+    res.json(products);
+});
 
 app.get('/customers', (req, res) => {
-    res.json(customers)
-})
+    res.json(customers);
+});
 
 app.get('/customers/:customerID', (req, res) => {
     const { customerID } = req.params;
     const customerDetails = customers[customerID - 1];
-    res.json(customerDetails === undefined ? { message: "Customer does not exist" } : customerDetails)
+    res.json(customerDetails === undefined ? { message: "Customer does not exist" } : customerDetails);
 })
 
 app.listen(3000, () => {
-    console.log("Server running ...")
-})
+    console.log("Server running ...");
+});
