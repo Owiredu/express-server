@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Owiredu/express-server#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.0.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
